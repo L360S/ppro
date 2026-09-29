@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UFC BALL</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- TOP BAR AND HOME BUTTON -->
+    <header class="top-bar">
+
+        <div class="top-bar-left">
+
+            <a href="index.html" class="logo">
+                UFC <span class="accent">BALL</span>
+            </a>
+
+            <span class="nav-divider"></span>
+
+            <span class="brand-tagline">
+                KNOW <span>•</span> ROLL <span>•</span> WIN
+            </span>
+
+        </div>
+
+
+        <div class="top-bar-right">
+
+            <span class="red-divider"></span>
+
+            <span class="game-tagline">
+                MMA KNOWLEDGE GAME
+            </span>
+
+        </div>
+
+    </header>
+
+    <!-- Page Body Container -->
+    <main class="game-container">
+        
+        <!-- Simple Fighter Header Box Placeholder -->
+        <div class="fighter-box">
+
+            <div class="fighter-left">
+                <img
+                    id="fighter-image"
+                    class="fighter-image"
+                    src=""
+                    alt=""
+                    hidden
+                >
+
+                <div class="final-message" id="final-message"></div>
+
+                <h2>Loading Fighter...</h2>
+            </div>
+
+            <div class="fighter-right">
+                <div class="build-progress">
+                    <div class="build-progress-count">
+                        <span id="selected-count">0</span>
+                        <span class="build-progress-slash">/</span>
+                        <span id="total-count"></span>
+                    </div>
+
+                    <span class="build-progress-text">STATS SELECTED</span>
+
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" id="progress-bar-fill"></div>
+                    </div>
+
+                </div>   
+                
+                <button type="button" id="respin-btn" class="respin-btn">
+                    <img src="images/icons/reroll.png" alt="">
+                    <span>Reroll</span>
+                </button>
+
+                <button type="button" id="play-again-btn" class="respin-btn" hidden>
+                    <img src="Images/icons/play-again.png" alt="">
+                    <span>Play Again</span>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Attribute Buttons Grid -->
+        <div class="skills-grid">
+
+            <button type="button" class="atr-btn" data-stat="CHIN">
+                <img class="atr-icon" src="Images/icons/CHIN.png" alt="">
+                <span class="atr-info">
+                    <span class="atr-name">CHIN</span>
+                    <span class="atr-fighter"></span>
+                </span>
+                <span class="atr-score" hidden></span>
+            </button>
+
+            <button type="button" class="atr-btn" data-stat="STRIKING">
+                <img class="atr-icon" src="Images/icons/PUNCH SPEED.png" alt="">
+                <span class="atr-info">
+                    <span class="atr-name">STRIKING</span>
+                    <span class="atr-fighter"></span>
+                </span>
+                <span class="atr-score" hidden></span>
+            </button>
+
+            <button type="button" class="atr-btn" data-stat="CARDIO">
+                <img class="atr-icon" src="Images/icons/CARDIO.png" alt="">
+                <span class="atr-info">
+                    <span class="atr-name">CARDIO</span>
+                    <span class="atr-fighter"></span>
+                </span>
+                <span class="atr-score" hidden></span>
+            </button>
+
+            <button type="button" class="atr-btn" data-stat="POWER">
+                <img class="atr-icon" src="Images/icons/PUNCH POWER.png" alt="">
+                <span class="atr-info">
+                    <span class="atr-name">POWER</span>
+                    <span class="atr-fighter"></span>
+                </span>
+                <span class="atr-score" hidden></span>
+            </button>
+
+            <button type="button" class="atr-btn" data-stat="JIU-JITSU">
+                <img class="atr-icon" src="Images/icons/jiu-jitsu.png" alt="">
+                <span class="atr-info">
+                    <span class="atr-name">JIU-JITSU</span>
+                    <span class="atr-fighter"></span>
+                </span>
+                <span class="atr-score" hidden></span>
+            </button>
+
+            <button type="button" class="atr-btn" data-stat="KICKING">
+                <img class="atr-icon" src="Images/icons/KICK SPEED.png" alt="">
+                <span class="atr-info">
+                    <span class="atr-name">KICKING</span>
+                    <span class="atr-fighter"></span>
+                </span>
+                <span class="atr-score" hidden></span>
+            </button>
+
+            <button type="button" class="atr-btn" data-stat="WRESTLING">
+                <img class="atr-icon" src="Images/icons/WRESTLING.png" alt="">
+                <span class="atr-info">
+                    <span class="atr-name">WRESTLING</span>
+                    <span class="atr-fighter"></span>
+                </span>
+                <span class="atr-score" hidden></span>
+            </button>
+
+
+
+        </div>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
