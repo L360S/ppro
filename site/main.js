@@ -79,7 +79,7 @@ function displayFighter(fighter) {
 
     fighterHeader.textContent = fighterName;
 
-    fighterImage.src = `Images/fighter_images/${fighterName}.png`;
+    fighterImage.src = `images/fighter_images/${fighterName}.png`;
     fighterImage.alt = fighterName;
     fighterImage.hidden = false;
 }
