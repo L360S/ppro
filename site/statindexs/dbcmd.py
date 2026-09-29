@@ -2,7 +2,7 @@ import sqlite3
 import pandas as pd
 
 # 1. Load the Excel file
-excel_file = 'ufcstats_revised_v5_eighth10.xlsx'
+excel_file = 'ufcstats_revised_v5_twelfth7.xlsx'
 df = pd.read_excel(excel_file)
 
 # 2. Add an 'id' column starting at 0
