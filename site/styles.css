@@ -8,7 +8,24 @@
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+
+    background-color: #08090B;
+}
+
 body {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+
     font-family: sans-serif;
 
     background:
@@ -23,7 +40,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    min-height: 100vh;
+    background-color: #08090B;
 }
 
 @media (max-width: 600px) {
