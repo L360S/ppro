@@ -954,6 +954,31 @@ body {
         flex-shrink: 0;
     }
 
+    .atr-btn {
+        grid-template-columns: 30px minmax(0, 1fr) auto;
+        gap: 8px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .atr-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .atr-fighter {
+        overflow-wrap: anywhere;
+        line-height: 1.15;
+    }
+
+    .atr-score {
+        min-width: 34px;
+        padding-left: 4px;
+
+        font-size: 1.15rem;
+    }
+
     .atr-score::before {
         display: none;
     }
