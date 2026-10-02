@@ -233,20 +233,29 @@ function getFinalMessage(finalScore) {
         case finalScore === 100:
             return "HERCULES";
 
-        case finalScore >= 95:
-            return "UNBEATABLE";
+        case finalScore === 99:
+            return "LIVING LEGEND";
+
+        case finalScore === 98:
+            return "THE BOOGEYMAN";
+
+        case finalScore === 97:
+            return "MACHINE";
+
+        case finalScore === 96:
+            return "CHAMPION";
+        
+        case finalScore === 95:
+            return "WARRIOR";
 
         case finalScore >= 90:
-            return "CHAMPION";
+            return "CONTENDER";
 
         case finalScore >= 85:
-            return "TOP CONTENDER";
-
-        case finalScore >= 80:
-            return "RANKED";
+            return "UNDERDOG";
 
         default:
-            return "BARELY HANGING";
+            return "OUTMATCHED";
     }
 }
 
