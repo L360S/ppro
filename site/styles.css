@@ -545,7 +545,6 @@ body {
 }
 
 /* -------------- Progress Bar -------------- */
-/* ---------- Build Progress ---------- */
 
 .build-progress {
     display: flex;
@@ -588,7 +587,7 @@ body {
 }
 
 .progress-bar {
-    width: min(110px, 80%);
+    width: min(125px, 90%);
     height: 3px;
 
     margin-top: 9px;
@@ -867,10 +866,6 @@ body {
         background-color 0.2s ease;
 }
 
-.respin-btn span {
-    white-space: nowrap;
-}
-
 .respin-btn img {
     width: 20px;
     height: 20px;
@@ -924,6 +919,39 @@ body {
 @media (min-width: 640px) {
     .page-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .fighter-right {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .respin-btn {
+        width: 100%;
+        min-width: 0;
+
+        padding: 8px 5px;
+        gap: 5px;
+
+        font-size: 0.72rem;
+    }
+
+    .respin-btn span {
+        min-width: 0;
+
+        white-space: normal;
+        text-align: center;
+        line-height: 1.15;
+    }
+
+    .respin-btn img {
+        width: 16px;
+        height: 16px;
+
+        flex-shrink: 0;
     }
 }
 
