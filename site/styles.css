@@ -953,6 +953,10 @@ body {
 
         flex-shrink: 0;
     }
+
+    .atr-score::before {
+        display: none;
+    }
 }
 
 
